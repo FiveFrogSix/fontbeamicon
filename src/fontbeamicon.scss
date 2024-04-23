@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'FontBeamIcon';
+    src: url('font/FontBeamIcon-Regular.woff2') format('woff2'),
+        url('font/FontBeamIcon-Regular.woff') format('woff'),
+        url('font/FontBeamIcon-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin custom-icon($content) {
+    &:before {
+        content: $content;
+    }
+}
+
+.bm {
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'FontBeamIcon', sans-serif;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    &.bm-protect {
+        @include custom-icon("A");
+    }
+
+    &.bm-list {
+        @include custom-icon("B");
+    }
+    
+    &.bm-hospital {
+        @include custom-icon("C");
+    }
+
+
+    
+}

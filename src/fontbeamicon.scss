@@ -14,16 +14,10 @@
 }
 
 .bm {
-    font-size: 60px;
+    font-size: 26px;
     font-weight: 400;
     font-style: normal;
     font-family: 'FontBeamIcon', sans-serif;
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
 
     &.bm-protect {
         @include custom-icon("A");
@@ -32,11 +26,11 @@
     &.bm-list {
         @include custom-icon("B");
     }
-    
+
     &.bm-hospital {
         @include custom-icon("C");
     }
 
 
-    
+
 }

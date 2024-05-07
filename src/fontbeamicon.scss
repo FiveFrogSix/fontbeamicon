@@ -31,6 +31,8 @@
         @include custom-icon("C");
     }
 
-
+    &.bm-times {
+        @include custom-icon("D");
+    }
 
 }
